@@ -227,7 +227,7 @@ describe('fee-on-transfer tokens', () => {
       overrides
     )
   })
-
+/*
   describe('swapExactTokensForTokensSupportingFeeOnTransferTokens', () => {
     const DTTAmount = expandTo18Decimals(5)
       .mul(100)
@@ -379,5 +379,5 @@ describe('fee-on-transfer tokens: reloaded', () => {
         overrides
       )
     })
-  })
+  })*/
 })

@@ -315,7 +315,7 @@ contract UnicSwapV2Router02 is IUnicSwapV2Router02 {
         // refund dust eth, if any
         if (msg.value > amounts[0]) TransferHelper.safeTransferETH(msg.sender, msg.value - amounts[0]);
     }
-
+/*
     // **** SWAP (supporting fee-on-transfer tokens) ****
     // requires the initial amount to have already been sent to the first pair
     function _swapSupportingFeeOnTransferTokens(address[] memory path, address _to) internal virtual {
@@ -398,7 +398,7 @@ contract UnicSwapV2Router02 is IUnicSwapV2Router02 {
         IWETH(WETH).withdraw(amountOut);
         TransferHelper.safeTransferETH(to, amountOut);
     }
-
+*/
     // **** LIBRARY FUNCTIONS ****
     function quote(uint amountA, uint reserveA, uint reserveB) public pure virtual override returns (uint amountB) {
         return UnicSwapV2Library.quote(amountA, reserveA, reserveB);
